@@ -94,6 +94,7 @@ public:
 private:
   llvm::SourceMgr LLVMSourceMgr;
   llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem> FileSystem;
+  bool editorMode = false;
   unsigned IDEInspectionTargetBufferID = 0U;
   unsigned IDEInspectionTargetOffset;
 
